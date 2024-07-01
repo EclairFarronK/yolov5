@@ -1,0 +1,5 @@
+win32gui.GetDesktopWindow()
+win32api.GetCursorPos()
+win32gui.WindowFromPoint()
+win32gui.GetClassName()
+win32gui.GetWindowText()

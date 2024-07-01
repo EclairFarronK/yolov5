@@ -1,0 +1,6 @@
+tensorboard
+    tensorboard --logdir runs\train
+pt转onnx
+    python export.py --weight 'E:\PycharmProjects\yolov5-7.0y\yolov5n.pt' --include onnx
+
+torchscript, onnx, openvino, engine, coreml, saved_model, pb, tflite, edgetpu, tfjs, paddle

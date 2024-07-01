@@ -1,0 +1,21 @@
+#todo shell脚本
+#  创建docker容器，并安装docker-compose
+#  执行之前需要把数据卷弄好
+#  执行docker compose
+version: '2'
+services:
+  v2ray:
+    image: mysql
+    volumes:
+      - .:/code
+    ports:
+      - "443:443"
+  nginx:
+    image: nginx
+    environment:
+      - "TZ=Asia/Shanghai"
+    volumes:
+      - "/home/ubuntu/work/nginx/nginx.conf:/etc/nginx/nginx.conf"
+    ports:
+      - "80:80"
+      - "443:443"
